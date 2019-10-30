@@ -1,3 +1,5 @@
 # ToDoList
 
-## Maintain
+## Maintainer
+
+Hugo Antoine
