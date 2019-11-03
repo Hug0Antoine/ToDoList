@@ -1,0 +1,95 @@
+h1{text-align: center;}
+
+h2{text-align: center;}
+
+#task{text-align: center;}
+
+#To_do{text-align: center;}
+
+#Done{text-align: center;}
+
+#settings{text-align: center;}
+
+
+#add{
+    border:0 none;
+	background:url(./add.png);
+    background-size: cover;
+    cursor:pointer;
+    width:100px;
+    height:100px;
+    display: block;
+    margin:auto;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+#add:hover {
+   transform: rotate(360deg);
+}
+
+
+#option{
+    border:0 none;
+	background:url(./gear.png);
+	background-size: cover;
+    cursor:pointer;
+    width:100px;
+    height:100px;
+    display: block;
+    margin:auto;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+#option:hover {
+   transform: rotate(360deg);
+}
+
+
+.edit{
+    border:0 none;
+    background:url(./edit.png);
+    background-size: cover;
+    cursor:pointer;
+    width:100px;
+    height:100px;
+    display: block;
+    margin:auto;
+    transition: all 1s ease;
+}
+.edit:hover {
+   transform: rotate(360deg);
+}
+
+
+.delete{
+    border:0 none;
+    background:url(./delete.png);
+    background-size: cover;
+    cursor:pointer;
+    width:100px;
+    height:100px;
+    display: block;
+    margin:auto;
+    border-radius:50%;
+    transition: all 1s ease;
+    transform: rotate(45deg);
+}
+.delete:hover {
+   transform: rotate(405deg);
+}
+
+#delete_all{
+    border:0 none;
+    background:url(./delete_all.png);
+    background-size: cover;
+    cursor:pointer;
+    width:100px;
+    height:100px;
+    display: block;
+    margin:auto;
+    border-radius:50%;
+    transition: all 1s ease;
+}
+#delete_all:hover {
+   transform: rotate(360deg);
+}
