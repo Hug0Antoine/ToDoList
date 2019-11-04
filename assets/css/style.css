@@ -1,34 +1,28 @@
+* {
+    box-sizing: border-box;
+  }
+
 html, body{
     margin: 0;
     padding: 0;
     background-color: white;
 }
 
-* {
-    box-sizing: border-box;
-  }
-
 header, h2,.task{
     text-align: center;
 }
 
-.settings{
+.settings,.To-do,.Done{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .To-do{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     list-style-type:none;
 }
 
 .Done{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     list-style-type:none;
 }
 
