@@ -1,0 +1,86 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+header, h2,.task{
+    text-align: center;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.To-do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type:none;
+}
+
+.Done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type:none;
+}
+
+.add,.option,.edit,.delete,.delete-all,.check-todo,.check-done{
+    cursor:pointer;
+    border:0 none;
+    background-color: white;
+    transition: all 1s ease;
+}
+.add:hover,.option:hover,.edit:hover,.delete:hover,.delete-all:hover{
+    transform: rotate(360deg);
+}
+
+.add{
+    color: green;
+    font-size: 4em; 
+}
+
+.option{
+    color: #606266;
+    font-size: 4em; 
+}
+
+.edit{
+    color: #333bd4;
+    font-size: 2em; 
+}
+
+.delete{
+    color: red;
+    font-size: 2em; 
+}
+
+.delete-all{
+    color: black;
+    font-size: 3em;
+}
+
+.check-todo:hover,.check-done:hover{
+    opacity: 1;
+}
+
+.check-todo{
+    opacity: 0.5;
+    color: green;
+    font-size: 2em;  
+}
+.check-done{
+    opacity: 0.5;
+    color: red;
+    font-size: 2em;  
+}
+.task{
+    margin: 1em;
+}
