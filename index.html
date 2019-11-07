@@ -15,22 +15,16 @@
 			<div class="settings">
 				<h2>Add a new task</h2>
 				<div>
-					<button class="add"><i class="fas fa-plus"></i></button>
+					<button class="add" onclick="AddTask()"><i class="fas fa-plus"></i></button>
 					<button class="option"><i class="fas fa-cog"></i></button>
 				</div>
 			</div>
-			<div class="task">
-				<input type="text" placeholder="Task...">
+			<div class="input">
+				<input id="task" type="text" placeholder="Task...">
 			</div>
 			<div>
 				<h2>To do</h2>
-				<ul class="To-do">
-					<li>
-						<button class="check-todo"><i class="fas fa-check-square"></i></button>
-						<label>task exemple</label>
-						<button class="edit"><i class="fas fa-pen"></i></button>
-						<button class="delete"><i class="fas fa-times-circle"></i></button>
-					</li>
+				<ul id="To-do">
 				</ul>
 			</div>	
 			<div>
@@ -45,7 +39,7 @@
 				</ul>
 			<div>
 			<script src="https://kit.fontawesome.com/c75e258638.js" crossorigin="anonymous"></script>	
-			<script type="text/javascript" src="script.js"></script>
+			<script type="text/javascript" src="assets/js/script.js"></script>
 		</main>
 	</body>	
 </html>
