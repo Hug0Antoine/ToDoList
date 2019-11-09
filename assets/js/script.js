@@ -76,6 +76,5 @@ function deleteTask() {
 onkeypress = function(key){
 	if(key.charCode == 13){
 		AddTask();
-
 	}
-}
+} 
