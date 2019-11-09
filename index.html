@@ -15,12 +15,9 @@
 			<div class="settings">
 				<h2>Add a new task</h2>
 				<div>
-					<button class="add" onclick="AddTask()"><i class="fas fa-plus"></i></button>
+					<button class="add" onclick="AddTaskApear()"><i class="fas fa-plus"></i></button>
 					<button class="option"><i class="fas fa-cog"></i></button>
 				</div>
-			</div>
-			<div class="input">
-				<input id="task" type="text" placeholder="Task...">
 			</div>
 			<div>
 				<h2>To do</h2>
@@ -38,6 +35,18 @@
 					</li>
 				</ul>
 			<div>
+			<div id="input">
+				<div>
+					<label id="titleAdd">Write your task</label>
+				</div>
+				<div>
+					<input id="task" type="text" placeholder="Task...">
+				</div>
+				<div id="VCButton">
+					<button id="cancel" onclick="CancelTask()"><i class="fas fa-times"></i></button>
+					<button id="validate" onclick="AddTask()"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
 			<script src="https://kit.fontawesome.com/c75e258638.js" crossorigin="anonymous"></script>	
 			<script type="text/javascript" src="assets/js/script.js"></script>
 		</main>
