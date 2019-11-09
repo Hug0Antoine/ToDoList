@@ -2,7 +2,23 @@ var checkNumber = 1;
 var editNumber = 1;
 var deleteNumber = 1;
 
+function AddTaskApear(){
+	document.getElementById("input").style.top = "0em";
+}
+
+function AddTaskDesapear() {
+	document.getElementById("input").style.top = "-13.5em";
+}
+
+function CancelTask() {
+
+	AddTaskDesapear();
+	document.getElementById("task").value = "";
+}
+
 function AddTask(){
+
+	AddTaskDesapear();
 
 	var li = document.createElement("li");
 
@@ -51,7 +67,10 @@ function AddTask(){
 	deleteIcon.classList.add("fas", "fa-times-circle");
 	li.appendChild(deleteBut);
 	deleteBut.appendChild(deleteIcon);
+}
 
+function deleteTask() {
+	
 }
 
 onkeypress = function(key){
