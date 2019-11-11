@@ -93,6 +93,15 @@ function DoneToToDo() {
 	label.innerHTML = nbLiValue;
 	li.appendChild(label);
 
+	var editBut = document.createElement("button");
+	var editIcon = document.createElement("I");
+	editBut.id = "editButton" + nbLi ;
+	editBut.classList.add("edit");
+	editIcon.classList.add("fas", "fa-pen");
+	editBut.onclick = function() { curentId = this.id; editTask();} 
+	li.appendChild(editBut);
+	editBut.appendChild(editIcon);
+
 	var deleteBut = document.createElement("button");
 	var deleteIcon = document.createElement("I");
 	deleteBut.id = "deleteButton" + nbLi ;
@@ -168,7 +177,11 @@ function AddTask(){
 
 	}else{
 		var inputValue = document.getElementById("task").value;
-		document.getElementById("label" + keepId).innerHTML = inputValue;		
+		if (inputValue === '') {
+			alert("Please write a task !");
+		}else {
+		document.getElementById("label" + keepId).innerHTML = inputValue;	
+		}	
 		AddTaskDesapear();
 		editStat = false;
 		keepId = "";
