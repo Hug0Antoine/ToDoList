@@ -6,13 +6,14 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: #bdc3c7;
+    font-size: 1.1em;
 }
 
 header, h2,#input{
     text-align: center;
 }
 
-.settings,#To-do,.Done{
+.settings,#To-do,#Done{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,10 +21,12 @@ header, h2,#input{
 
 #To-do{
     list-style-type:none;
+    display: flex;
+    justify-content: space-between;
     margin: 0.5em;
 }
 
-.Done{
+#Done{
     list-style-type:none;
 }
 
@@ -79,7 +82,7 @@ header, h2,#input{
 #input{
     position: absolute;
     top: -13.5em;
-    left: 30%;
+    left: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
