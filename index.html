@@ -1,45 +1,33 @@
 <html lang="fr">
-
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>List to do</title>
 		<link rel="stylesheet" href="assets/css/style.css"> 
 	</head>
-
 	<body>
 		<header>
 			<h1>LIST TO DO</h1>
 		</header>
 		<main>
-			<div class="settings">
-				<h2>Add a new task</h2>
-				<div>
-					<button class="add" onclick="AddTaskApear()"><i class="fas fa-plus"></i></button>
-					<button class="option"><i class="fas fa-cog"></i></button>
-				</div>
+			<h2>Add a new task</h2>
+			<div>
+				<i class="fas fa-plus"></i>
+				<i class="fas fa-cog"></i>
 			</div>
-			<div>
-				<h2>To do</h2>
-				<ul id="To-do">
-				</ul>
-			</div>	
-			<div>
-				<h2>Done</h2>
-				<ul id="Done">
-					<button class="delete-all"><i class="fas fa-trash"></i></button>
-				</ul>
-			<div>
+			<h2>To do</h2>
+			<ul></ul>
+			<h2>Done</h2>
+			<i class="fas fa-trash" class="delete-all"></i>
+			<ul></ul>
 			<div id="input">
-				<div>
-					<label id="titleAdd">Write your task</label>
-				</div>
-				<div>
+				<div id="popUpTask">
+					<h2>Write your task</h2>
 					<input id="task" type="text" placeholder="Task...">
-				</div>
-				<div id="VCButton">
-					<button id="cancel" onclick="CancelTask()"><i class="fas fa-times"></i></button>
-					<button id="validate" onclick="AddTask()"><i class="fas fa-check"></i></button>
+					<div id="CancelAndValidateButton">
+						<i class="fas fa-times"></i>
+						<i class="fas fa-check"></i>
+					</div>
 				</div>
 			</div>
 			<script src="https://kit.fontawesome.com/c75e258638.js" crossorigin="anonymous"></script>	

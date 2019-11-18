@@ -1,15 +1,77 @@
 * {
     box-sizing: border-box;
-}
-
-html, body{
     margin: 0;
     padding: 0;
-    background-color: #bdc3c7;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #e08036;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}   
+
+#input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+}
+
+#popUpTask{
+    width: 25%;
+    height: 10em;
+    background-color: #e07116;
+    color: aliceblue;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#CancelAndValidateButton{
+    width: 100%;
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between; 
+}
+
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{  
     font-size: 1.1em;
 }
 
-header, h2,#input{
+body{
+   background-color: #bdc3c7; 
+}
+
+header{
     text-align: center;
 }
 
@@ -19,15 +81,16 @@ header, h2,#input{
     align-items: center;
 }
 
-#To-do{
+li{
+
     list-style-type:none;
+
+}
+
+#To-do {
     display: flex;
     justify-content: space-between;
     margin: 0.5em;
-}
-
-#Done{
-    list-style-type:none;
 }
 
 .add,.option,.edit,.delete,.delete-all,.check-todo,.check-done{
@@ -65,10 +128,6 @@ header, h2,#input{
     font-size: 3em;
 }
 
-.check-todo:hover,.check-done:hover{
-    opacity: 1;
-}
-
 .check-todo{
     opacity: 0.5;
     color: green;
@@ -79,6 +138,11 @@ header, h2,#input{
     color: red;
     font-size: 2em;  
 }
+
+.check-todo:hover,.check-done:hover{
+    opacity: 1;
+}
+
 #input{
     position: absolute;
     top: -13.5em;
@@ -118,7 +182,7 @@ header, h2,#input{
 
 #VCButton{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evz;
     align-content: flex-end;
 }
 
@@ -131,4 +195,4 @@ header, h2,#input{
 
 #titleAdd{
     font-size: 2em;
-}
+}*/

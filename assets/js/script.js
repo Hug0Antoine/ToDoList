@@ -22,7 +22,7 @@ function CancelTask() {
 
 }
 
-function extraitNombre(str){ return Number(str.replace(/[^\d]/g, "")) } // je sais pas comment elle marche mais elle marche mdrr
+function extraitNombre(str){ return Number(str.replace(/[^\d]/g, "")) } 
 
 function editTask() {
 
